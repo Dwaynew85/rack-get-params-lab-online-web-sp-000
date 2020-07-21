@@ -26,7 +26,7 @@ class Application
       add_term = req.params["item"]
       if @@items.include?(add_term)
         @@cart << add_term
-      else 
+      else
         resp.write "We ain't got that bruh"
       end
     else
